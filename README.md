@@ -21,4 +21,7 @@ the input indices are invalid. For example,
 - Input 0, 0 which represents A, the output should be 0
 - Input 0, 1, which is an invalid index. The output should be -1
 - Input 1, 1, which is C. The supported weight should be the half of A’s weight and the weight
-it’s carrying. 1/2 * (128 + 0) = 64. Thus, output should be 64. 
+it’s carrying. 1/2 * (128 + 0) = 64. Thus, output should be 64.
+
+## Application
+![Application Screen](app_screen.png)
