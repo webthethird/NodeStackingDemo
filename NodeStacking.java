@@ -9,7 +9,6 @@ public class NodeStacking {
      * calculate the weight it supports.
      */
     public static double weightSupporting(int row, int col) {
-        // Filling your code here
     	if (row < 0 || col < 0 || col > row) {
     		return -1;
     	} else if (row == 0 && col == 0) {
@@ -21,10 +20,10 @@ public class NodeStacking {
     	} else {
     		return 0.5 * (weightSupporting(row - 1, col - 1) + weightSupporting(row - 1, col));
     	}
-        // End of your code
     }
     
     public static double weightSupporting(double topWeight, int row, int col) {
+    	// If alternative weight is provided, set weight then call recursive method
     	weight = topWeight;
     	
     	return weightSupporting(row, col);
